@@ -8,25 +8,26 @@ import Container from '../Container/Container';
 
 class SearchResults extends React.Component {
   static propTypes = {
+    title: PropTypes.string,
     icon: PropTypes.node,
     cards: PropTypes.array,
-    searchString: PropTypes.string,
-    children: PropTypes.node,
   };
 
   static defaultProps = {
   icon: settings.defaultColumnIcon,
+  title: 'Search Results',
 };
 
   render() {
-    const {icon, cards, children} = this.props;
+    const {title, icon, cards} = this.props;
     return (
       <section className={styles.component}>
         <Container>
-          {children}
+          <h3 className={styles.title}> {title}
             <span className={styles.icon}>
               <Icon name={icon} />
             </span>
+          </h3>
           <div className={styles.cards}>
             {cards.map(cardData => (
               <Card key={cardData.id} {...cardData} />

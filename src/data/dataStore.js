@@ -129,7 +129,7 @@ const columns = [
   },
   {
     id: 'column-4',
-    listId: 'list-2',
+    listId: 'list-4',
     title: 'Strange column',
     icon: 'question',
   },
