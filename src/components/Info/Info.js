@@ -6,8 +6,8 @@ import {infoContents} from '../../data/dataStore';
 
 const Info = () => (
   <Container>
-  <Hero titleText={infoContents.title} image={infoContents.image} />
-  {infoContents.content}
+    <Hero titleText={infoContents.title} image={infoContents.image} />
+    {infoContents.content}
   </Container>
 );
 

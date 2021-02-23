@@ -6,8 +6,8 @@ import {faqContents} from '../../data/dataStore';
 
 const FAQ = () => (
   <Container>
-  <Hero titleText={faqContents.title} image={faqContents.image} />
-  {faqContents.content}
+    <Hero titleText={faqContents.title} image={faqContents.image} />
+    {faqContents.content}
   </Container>
 );
 

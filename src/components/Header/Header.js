@@ -15,7 +15,7 @@ class Header extends React.Component {
       <header className={styles.component}>
         <Container>
           <div className={styles.wrapper}>
-          <Search />
+            <Search />
             <Link to='/' className={styles.logo}>
               <Icon name={settings.header.defaultIcon} />
             </Link>
@@ -23,7 +23,7 @@ class Header extends React.Component {
               <NavLink exact to='/' activeClassName='active'>Home</NavLink>
               <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
               <NavLink exact to='/FAQ' activeClassName='active'>FAQ</NavLink>
-              </nav>
+            </nav>
           </div>
         </Container>
       </header>

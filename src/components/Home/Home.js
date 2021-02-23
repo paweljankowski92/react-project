@@ -3,13 +3,12 @@ import styles from './Home.scss';
 import ListLink from '../ListLink/ListLink';
 import PropTypes from 'prop-types';
 
-
 class Home extends React.Component {
   static propTypes = {
-  title: PropTypes.node,
-  subtitle: PropTypes.node,
-  lists: PropTypes.array,
-}
+    title: PropTypes.node,
+    subtitle: PropTypes.node,
+    lists: PropTypes.array,
+  }
   render() {
     const {title, subtitle, lists} = this.props;
     return (
